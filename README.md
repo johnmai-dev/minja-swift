@@ -18,13 +18,16 @@ let template = ChatTemplate(
 )
 
 let result = try template.apply(
-    messages: [["role": "user", "content": "Hello"], ["role": "assistant", "content": "Hi"]],
+    messages: [
+        ["role": "user", "content": "Hello"],
+        ["role": "assistant", "content": "Hi"]
+    ],
     tools: [
     [
         "type": "function",
         "function": [
-        "name": "google_search",
-        "arguments": ["query": "2+2"],
+            "name": "google_search",
+            "arguments": ["query": "2+2"],
         ],
     ]
     ],
@@ -41,7 +44,7 @@ dependencies: [
     .package(url: "https://github.com/johnmai-dev/minja-swift", from: "0.0.1")
 ]
 ```
-and then add `minja-swift` as a dependency for your target:
+And then add `minja-swift` as a dependency for your target:
 
 ```swift
 targets: [
@@ -54,7 +57,7 @@ targets: [
 ]
 ```
 
-and then set `Swift Compiler - Language` to `C++/Objective-C++ Interoperability` in the `Build Settings` tab of your target.
+And then set `Swift Compiler - Language` to `C++/Objective-C++ Interoperability` in the `Build Settings` tab of your target.
 
 ## To Do
 
