@@ -1,6 +1,6 @@
 # minja-swift
 
-minja-swift is a Swift wrapper of the [Minja](https://github.com/google/minja).
+minja-swift is a swift wrapper of the [Minja](https://github.com/google/minja).
 
 > [Minja](https://github.com/google/minja) is a minimalistic C++ Jinja templating engine for LLM chat templates
 
