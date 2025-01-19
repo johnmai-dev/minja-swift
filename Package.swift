@@ -11,7 +11,12 @@ let package = Package(
     .library(
       name: "Minja",
       targets: ["Minja"]
-    )
+    ),
+    .executable(name: "minja-benchmark", targets: ["Benchmarks"]),
+  ],
+  dependencies:    [
+    .package(url: "https://github.com/google/swift-benchmark", branch: "main"),
+    .package(url: "https://github.com/maiqingqiang/Jinja", branch: "main")
   ],
   targets: [
     // Targets are the basic building blocks of a package, defining a module or a test suite.
@@ -46,6 +51,17 @@ let package = Package(
       swiftSettings: [
         .interoperabilityMode(.Cxx)
       ]
+    ),
+    .executableTarget(
+        name: "Benchmarks",
+        dependencies: [
+            "Minja",
+            .product(name: "Benchmark", package: "swift-benchmark"),
+            "Jinja"
+        ],
+        swiftSettings: [
+          .interoperabilityMode(.Cxx)
+        ]
     ),
   ],
   cxxLanguageStandard: .gnucxx17

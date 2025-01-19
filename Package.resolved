@@ -1,0 +1,33 @@
+{
+  "originHash" : "5bf9592635a5c87e06056d511f7c5d528c0d9ee40ad96a5ae8630292fbc58800",
+  "pins" : [
+    {
+      "identity" : "jinja",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/maiqingqiang/Jinja",
+      "state" : {
+        "branch" : "main",
+        "revision" : "10cf4269b40f481c5ef568760c47084f8f5a9195"
+      }
+    },
+    {
+      "identity" : "swift-argument-parser",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/apple/swift-argument-parser",
+      "state" : {
+        "revision" : "41982a3656a71c768319979febd796c6fd111d5c",
+        "version" : "1.5.0"
+      }
+    },
+    {
+      "identity" : "swift-benchmark",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/google/swift-benchmark",
+      "state" : {
+        "branch" : "main",
+        "revision" : "8163295f6fe82356b0bcf8e1ab991645de17d096"
+      }
+    }
+  ],
+  "version" : 3
+}
