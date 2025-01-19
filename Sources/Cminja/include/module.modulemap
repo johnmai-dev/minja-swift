@@ -1,0 +1,5 @@
+module Cminja {
+    header "minja.hpp"
+//    requires cplusplus
+    export *
+}

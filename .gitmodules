@@ -1,0 +1,3 @@
+[submodule "Sources/Cminja/minja"]
+	path = Sources/Cminja/minja
+	url = https://github.com/google/minja.git
